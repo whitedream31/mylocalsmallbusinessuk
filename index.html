@@ -470,24 +470,34 @@
   // Year
   document.getElementById('year').textContent=new Date().getFullYear();
 
-  // Hero: live preview of a real mini-site, picked at random from a curated list.
-  // TODO: replace with the slugs of the mini-sites to showcase.
-  var SHOWCASE_SLUGS=['green-leaf-bakery'];
+  // Hero: live preview of a real mini-site. Asks mlsb.uk for a random
+  // presentable business (/api/showcase); falls back to the directory
+  // home page if the API is unreachable.
   (function(){
-    var slug=SHOWCASE_SLUGS[Math.floor(Math.random()*SHOWCASE_SLUGS.length)];
-    var url='https://mlsb.uk/'+slug;
     var wrap=document.getElementById('previewWrap'),
         frame=document.getElementById('previewFrame');
-    document.getElementById('previewUrl').textContent=url;
-    document.getElementById('previewVisit').href=url;
     function fit(){
       var s=wrap.clientWidth/1280;
       frame.style.transform='scale('+s+')';
       frame.style.height=Math.ceil(wrap.clientHeight/s)+'px';
     }
+    function show(url,isFallback){
+      document.getElementById('previewUrl').textContent=url;
+      document.getElementById('previewVisit').href=url;
+      if(isFallback){
+        document.querySelector('.live-note').textContent='The MLSB directory, live right now.';
+      }
+      fit();
+      frame.src=url;
+    }
     window.addEventListener('resize',fit);
-    fit();
-    frame.src=url;
+    fetch('https://mlsb.uk/api/showcase')
+      .then(function(r){return r.json()})
+      .then(function(d){
+        if(d&&d.ok&&d.url){show(d.url,false)}
+        else{show('https://mlsb.uk',true)}
+      })
+      .catch(function(){show('https://mlsb.uk',true)});
   })();
 </script>
 </body>
