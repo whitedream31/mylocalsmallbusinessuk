@@ -1,0 +1,10 @@
+# robots.txt for mylocalsmallbusiness.uk
+# All crawlers welcome on the public pages.
+
+User-agent: *
+Allow: /
+# Internal files - not for search results
+Disallow: /config/
+Disallow: /assets/documents/
+
+Sitemap: https://mylocalsmallbusiness.uk/sitemap.xml
