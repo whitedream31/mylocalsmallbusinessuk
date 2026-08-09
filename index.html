@@ -22,15 +22,17 @@
 <meta property="og:title" content="My Local Small Business — Simply putting you online">
 <meta property="og:description" content="A clean, self-managed mini-site at mlsb.uk/yourname plus a searchable directory local customers can use. Free to start, live the moment you register.">
 <meta property="og:url" content="https://mylocalsmallbusiness.uk/">
-<meta property="og:image" content="https://mylocalsmallbusiness.uk/assets/brand/MLSB_Logo.png">
-<meta property="og:image:alt" content="My Local Small Business logo">
+<meta property="og:image" content="https://mylocalsmallbusiness.uk/assets/brand/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="My Local Small Business — free mini-site and UK directory listing">
 <meta property="og:locale" content="en_GB">
 
 <!-- Twitter card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="My Local Small Business — Simply putting you online">
 <meta name="twitter:description" content="A clean, self-managed mini-site at mlsb.uk/yourname plus a searchable directory local customers can use. Free to start.">
-<meta name="twitter:image" content="https://mylocalsmallbusiness.uk/assets/brand/MLSB_Logo.png">
+<meta name="twitter:image" content="https://mylocalsmallbusiness.uk/assets/brand/og-image.png">
 
 <!-- Structured data -->
 <script type="application/ld+json">
@@ -44,6 +46,26 @@
   "description": "A hosted platform giving UK small businesses a simple, self-managed mini-site and a searchable public directory. Free to start.",
   "areaServed": "GB",
   "slogan": "Simply putting you online"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is the free plan really free?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes — £0, forever. Every registered business gets a live mini-site and a directory listing, and no card details are needed unless you choose the paid tier."}},
+    {"@type": "Question", "name": "Do I need my own domain name?",
+     "acceptedAnswer": {"@type": "Answer", "text": "No. Your mini-site lives at mlsb.uk/yourname, so there's nothing to buy or renew. If you already have a domain, you can display it on your mini-site."}},
+    {"@type": "Question", "name": "Do I need any technical skills?",
+     "acceptedAnswer": {"@type": "Answer", "text": "None. Everything is managed from a simple dashboard — nothing to install, host or update."}},
+    {"@type": "Question", "name": "What happens when my free trial ends?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Your account reverts to Free automatically and nothing is charged. Free-tier limits then apply to any extra entries, but nothing is deleted — upgrade later and everything comes back."}},
+    {"@type": "Question", "name": "How much does Premium cost, and can I cancel?",
+     "acceptedAnswer": {"@type": "Answer", "text": "£5 a month or £50 a year (two months free). You can cancel at any time and drop back to the free plan; after the initial grace period, payments aren't refunded."}},
+    {"@type": "Question", "name": "How quickly will my mini-site be live?",
+     "acceptedAnswer": {"@type": "Answer", "text": "The moment you register. You can add and refine your content whenever suits you."}}
+  ]
 }
 </script>
 
@@ -145,6 +167,7 @@
     font-weight:700;color:var(--blue);margin-bottom:12px}
   h2{font-size:2.1rem;line-height:1.18;letter-spacing:-.3px;margin-bottom:14px}
   .section-head p{color:var(--grey);font-size:1.08rem}
+  .section-head p+p{margin-top:10px}
   .alt{background:var(--blue-light)}
 
   /* What it is */
@@ -174,6 +197,9 @@
     color:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:800}
   .feature h3{font-size:1.02rem;margin-bottom:4px}
   .feature p{color:var(--grey);font-size:.9rem}
+  .feature-group{grid-column:1/-1;text-transform:uppercase;letter-spacing:1.2px;font-size:.82rem;
+    font-weight:700;color:var(--blue);margin-top:14px}
+  .feature-group:first-child{margin-top:0}
 
   /* Tiers */
   .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
@@ -188,6 +214,17 @@
   .tier li{padding:7px 0 7px 26px;position:relative;color:var(--black);font-size:.94rem;border-bottom:1px solid var(--blue-light)}
   .tier li:before{content:"✓";position:absolute;left:0;color:var(--blue);font-weight:800}
   .tier .btn{margin-top:auto;text-align:center}
+  .tier-note{margin-top:10px;font-size:.82rem;color:var(--grey);text-align:center}
+
+  /* FAQ */
+  .faq{max-width:760px;margin:0 auto}
+  .faq details{border:1px solid var(--blue-mid);border-radius:var(--radius);background:var(--white);margin-bottom:12px}
+  .faq summary{cursor:pointer;font-weight:600;padding:16px 20px;list-style:none;position:relative;padding-right:44px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary:after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);
+    color:var(--blue);font-weight:800;font-size:1.2rem}
+  .faq details[open] summary:after{content:"–"}
+  .faq details p{padding:0 20px 16px;color:var(--grey);font-size:.95rem}
 
   /* CTA band */
   .cta-band{background:linear-gradient(120deg,var(--blue),var(--blue-dark));color:#fff;text-align:center}
@@ -246,6 +283,7 @@
       <a href="#how">How it works</a>
       <a href="#features">Features</a>
       <a href="#tiers">Plans</a>
+      <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-cta">
       <a class="btn ghost" href="https://mlsb.uk">Search directory</a>
@@ -263,7 +301,6 @@
     <div>
       <h1>Your small business, <span>simply put online.</span></h1>
       <p class="lead">My Local Small Business gives UK businesses a clean, self-managed mini-site at <strong>mlsb.uk/yourname</strong> — and lists you in a directory local customers can search. No web designer, no hosting headaches.</p>
-      <p class="lead">So what's a mini-site? It's your whole online presence on one tidy, mobile-friendly page. Your details live in MLSB's central system, and the page is built on the spot from the content blocks you choose — description, gallery, price list or menu, contact form and more. It goes live the moment you register, you arrange it from your dashboard, and you never have to build, host or maintain a thing.</p>
       <div class="hero-actions">
         <a class="btn" href="https://mlsb.uk/register">Create your mini-site — free</a>
         <a class="btn ghost" href="https://mlsb.uk">Find a business</a>
@@ -291,6 +328,7 @@
       <span class="eyebrow">What is MLSB?</span>
       <h2>A whole web presence, without building a website</h2>
       <p>MLSB is a hosted platform with three simple parts working together — so customers can find you and you stay in control.</p>
+      <p>A mini-site is your whole online presence on one tidy, mobile-friendly page, built on the spot from the content blocks you choose — description, gallery, price list or menu, contact form and more. It goes live the moment you register, and you never have to build, host or maintain a thing.</p>
     </div>
     <div class="pillars">
       <div class="pillar">
@@ -351,24 +389,122 @@
     <div class="section-head">
       <span class="eyebrow">What you get</span>
       <h2>Everything a small business needs to be online</h2>
-      <p>Designed to be simple to run and easy for customers to use.</p>
+      <p>Designed to be simple to run and easy for customers to use. Every section below can be switched on or off and reordered from your dashboard.</p>
     </div>
     <div class="features">
-      <div class="feature"><div class="tick">✓</div><div><h3>Content blocks</h3><p>Header, description, galleries, price lists, menus, articles, callouts and a contact form — switch each on or off.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Team &amp; enquiry routing</h3><p>Add team members and send each contact-form enquiry to the right inbox — your account, a named team member, or any address.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>18 design templates</h3><p>From artisan and professional to coastal and noir — each with named colour schemes, header backgrounds featuring your logo, and optional top navigation.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Bookings</h3><p>Take bookings for rooms, venues and appointments, linked to your diary — with email confirmations and cancellation for you and your customer.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Events</h3><p>List your upcoming events on your mini-site and have them appear in directory search results too.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>AI-improved descriptions</h3><p>One click asks AI to sharpen your business description — keeping your facts, improving the wording.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Featured adverts</h3><p>Promote your business with a featured advert shown at the top of search results and area or category listings.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Import &amp; export</h3><p>Download your whole account as a single file for safe keeping — and restore it just as easily.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Search by area</h3><p>Pick the towns, counties or regions you serve — or UK-wide — and match every relevant search.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Visitor counts</h3><p>See weekly and monthly visits to your mini-site, with a simple trend against the previous period.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Google map</h3><p>Optionally show a map of your primary address so customers can find you easily.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Privacy &amp; terms built in</h3><p>Standard policy pages are included on every plan, with optional customisation.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Sole-trader voice</h3><p>Flip headings between "us" and "me" so the wording suits a one-person business.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Profile completeness</h3><p>A simple indicator shows how much of your profile is filled in, so nothing gets missed.</p></div></div>
-      <div class="feature"><div class="tick">✓</div><div><h3>Custom web address</h3><p>Claim a short, memorable mlsb.uk/yourname slug that's easy to share offline and on.</p></div></div>
+      <div class="feature-group">Your content</div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Photo galleries</h3>
+          <p>Show off your work, products or premises with image galleries — upload photos and arrange them how you like.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Price lists &amp; menus</h3>
+          <p>Publish clear price lists or menus, organised into sections, so customers know what you offer before they get in touch.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Articles</h3>
+          <p>Share news, offers and updates as articles on your mini-site — an easy way to keep customers coming back.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Callouts</h3>
+          <p>Highlight a special offer, announcement or key message in an eye-catching callout box on your page.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>18 design templates</h3>
+          <p>From artisan and professional to coastal and noir — each with named colour schemes, header backgrounds
+            featuring your logo, and optional top navigation.</p>
+        </div>
+      </div>
+      <div class="feature-group">Get found</div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Search by category or area</h3>
+          <p>Pick the type of business, towns, counties or regions you serve — or UK-wide — and match every relevant search.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Featured adverts</h3>
+          <p>Promote your business with a featured advert shown at the top of search results and area or category listings.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Events</h3>
+          <p>List your upcoming events on your mini-site and have them appear in directory search results too.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Google map</h3>
+          <p>Optionally show a map of your primary address so customers can find you easily.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>AI-improved descriptions</h3>
+          <p>One click asks AI to sharpen your business description — keeping your facts, improving the wording.</p>
+        </div>
+      </div>
+      <div class="feature-group">Run your business</div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Contact form</h3>
+          <p>A built-in form so customers can reach you directly from your mini-site, without your email address being exposed.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Team &amp; enquiry routing</h3>
+          <p>Add team members and send each contact-form enquiry to the right inbox — your account, a named team member, or
+            any address.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Bookings</h3>
+          <p>Take bookings for rooms, venues and appointments, linked to your diary — with email confirmations and
+            cancellation for you and your customer.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Visitor counts</h3>
+          <p>See weekly and monthly visits to your mini-site, with a simple trend against the previous period.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Privacy &amp; terms built in</h3>
+          <p>Standard policy pages are included on every plan, with optional customisation.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -389,7 +525,7 @@
           <li>Live mini-site at your own slug</li>
           <li>Core content blocks</li>
           <li>Directory listing &amp; search</li>
-          <li>Events &amp; bookings</li>
+          <li>Articles, image gallery, contact form</li>
           <li>Template &amp; colour scheme choice</li>
           <li>Visitor counts</li>
         </ul>
@@ -401,19 +537,20 @@
         <div class="price">Premium, free for 30 days</div>
         <ul>
           <li>Everything in Free</li>
+          <li>Events &amp; bookings</li>
           <li>Full premium feature access</li>
           <li>Premium templates &amp; gallery styles</li>
           <li>Featured adverts in search results</li>
           <li>Extra pages &amp; customisation</li>
-          <li>Reverts to Free after the trial</li>
         </ul>
         <a class="btn" href="https://mlsb.uk/register">Start free trial</a>
+        <p class="tier-note">Reverts to Free automatically when the trial ends — nothing to cancel.</p>
       </div>
       <div class="tier">
-        <h3>Paid</h3>
-        <div class="price">Subscription</div>
+        <h3>Premium</h3>
+        <div class="price">£5/month · £50/year (2 months free)</div>
         <ul>
-          <li>Everything in Trial, kept on</li>
+          <li>Everything in the trial, kept on</li>
           <li>Extended capabilities</li>
           <li>Premium templates &amp; pages</li>
           <li>Featured adverts in search results</li>
@@ -421,6 +558,42 @@
         </ul>
         <a class="btn ghost" href="https://mlsb.uk/register">Upgrade</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Is the free plan really free?</summary>
+        <p>Yes — £0, forever. Every registered business gets a live mini-site and a directory listing, and no card details are needed unless you choose the paid tier.</p>
+      </details>
+      <details>
+        <summary>Do I need my own domain name?</summary>
+        <p>No. Your mini-site lives at mlsb.uk/yourname, so there's nothing to buy or renew. If you already have a domain, you can display it on your mini-site.</p>
+      </details>
+      <details>
+        <summary>Do I need any technical skills?</summary>
+        <p>None. Everything is managed from a simple dashboard — nothing to install, host or update.</p>
+      </details>
+      <details>
+        <summary>What happens when my free trial ends?</summary>
+        <p>Your account reverts to Free automatically and nothing is charged. Free-tier limits then apply to any extra entries, but nothing is deleted — upgrade later and everything comes back.</p>
+      </details>
+      <details>
+        <summary>How much does Premium cost, and can I cancel?</summary>
+        <p>£5 a month or £50 a year (two months free). You can cancel at any time and drop back to the free plan; after the initial grace period, payments aren't refunded.</p>
+      </details>
+      <details>
+        <summary>How quickly will my mini-site be live?</summary>
+        <p>The moment you register. You can add and refine your content whenever suits you.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -452,6 +625,7 @@
           <li><a href="#how">How it works</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#tiers">Plans</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
       <div>
