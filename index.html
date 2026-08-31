@@ -12,26 +12,26 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Local Small Business — Simply putting you online</title>
-<meta name="description" content="MLSB gives UK small businesses a simple, self-managed mini-site at mlsb.uk/yourname, plus a public directory customers can search. Free to start.">
+<title>My Local Small Business — A free mini-site for UK small businesses</title>
+<meta name="description" content="MLSB gives UK small businesses a professional mini-site they manage themselves — no web designer, no hosting, no domain to buy. Free to start and live as soon as your account is verified.">
 <link rel="canonical" href="https://mylocalsmallbusiness.uk/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="My Local Small Business">
-<meta property="og:title" content="My Local Small Business — Simply putting you online">
-<meta property="og:description" content="A clean, self-managed mini-site at mlsb.uk/yourname plus a searchable directory local customers can use. Free to start, live the moment you register.">
+<meta property="og:title" content="My Local Small Business — A free mini-site for UK small businesses">
+<meta property="og:description" content="A professional mini-site you manage yourself — no web designer, no hosting, no domain to buy. Free to start and live as soon as your account is verified.">
 <meta property="og:url" content="https://mylocalsmallbusiness.uk/">
 <meta property="og:image" content="https://mylocalsmallbusiness.uk/assets/brand/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="My Local Small Business — free mini-site and UK directory listing">
+<meta property="og:image:alt" content="My Local Small Business — simple mini-sites for UK businesses">
 <meta property="og:locale" content="en_GB">
 
 <!-- Twitter card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="My Local Small Business — Simply putting you online">
-<meta name="twitter:description" content="A clean, self-managed mini-site at mlsb.uk/yourname plus a searchable directory local customers can use. Free to start.">
+<meta name="twitter:title" content="My Local Small Business — A free mini-site for UK small businesses">
+<meta name="twitter:description" content="A professional mini-site you manage yourself. No designer, no hosting, no domain to buy. Free to start.">
 <meta name="twitter:image" content="https://mylocalsmallbusiness.uk/assets/brand/og-image.png">
 
 <!-- Structured data -->
@@ -43,7 +43,7 @@
   "alternateName": "MLSB",
   "url": "https://mylocalsmallbusiness.uk/",
   "logo": "https://mylocalsmallbusiness.uk/assets/brand/MLSB_Logo.png",
-  "description": "A hosted platform giving UK small businesses a simple, self-managed mini-site and a searchable public directory. Free to start.",
+  "description": "A hosted platform giving UK small businesses a simple, self-managed mini-site with the tools to run day to day. Free to start.",
   "areaServed": "GB",
   "slogan": "Simply putting you online"
 }
@@ -53,18 +53,24 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {"@type": "Question", "name": "What exactly do I get?",
+     "acceptedAnswer": {"@type": "Answer", "text": "A single-page mini-site at mlsb.uk/yourname with your description, contact details, opening hours, photos, prices and a contact form — plus a dashboard to manage it all. Extras such as events, online bookings and newsletters can be switched on if you want them."}},
     {"@type": "Question", "name": "Is the free plan really free?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes — £0, forever. Every registered business gets a live mini-site and a directory listing, and no card details are needed unless you choose the paid tier."}},
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes — £0, forever. Every verified business gets a live mini-site, and no card details are needed unless you choose to upgrade."}},
     {"@type": "Question", "name": "Do I need my own domain name?",
      "acceptedAnswer": {"@type": "Answer", "text": "No. Your mini-site lives at mlsb.uk/yourname, so there's nothing to buy or renew. If you already have a domain, you can display it on your mini-site."}},
     {"@type": "Question", "name": "Do I need any technical skills?",
      "acceptedAnswer": {"@type": "Answer", "text": "None. Everything is managed from a simple dashboard — nothing to install, host or update."}},
-    {"@type": "Question", "name": "What happens when my free trial ends?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Your account reverts to Free automatically and nothing is charged. Free-tier limits then apply to any extra entries, but nothing is deleted — upgrade later and everything comes back."}},
+    {"@type": "Question", "name": "How quickly will my mini-site be live?",
+     "acceptedAnswer": {"@type": "Answer", "text": "As soon as your account is verified. When you register we email you a confirmation link, and we ask you to confirm that you are the owner of the business. Once that's done your mini-site goes live at mlsb.uk/yourname, and you can add and refine your content whenever suits you."}},
+    {"@type": "Question", "name": "Do I have to use the bookings system?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Not at all. Bookings are entirely optional and switched off by default. Plenty of businesses just want a smart page with their prices, photos and a contact form — that works perfectly well on its own."}},
+    {"@type": "Question", "name": "How do bookings and the diary work?",
+     "acceptedAnswer": {"@type": "Answer", "text": "If you turn them on, you add bookable appointments, rooms or venues and set your availability. Customers choose a time online, then you both receive confirmation and cancellation emails."}},
     {"@type": "Question", "name": "How much does Premium cost, and can I cancel?",
      "acceptedAnswer": {"@type": "Answer", "text": "£5 a month or £50 a year (two months free). You can cancel at any time and drop back to the free plan; after the initial grace period, payments aren't refunded."}},
-    {"@type": "Question", "name": "How quickly will my mini-site be live?",
-     "acceptedAnswer": {"@type": "Answer", "text": "The moment you register. You can add and refine your content whenever suits you."}}
+    {"@type": "Question", "name": "What happens when my free trial ends?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Your account reverts to Free automatically and nothing is charged. Free-tier limits then apply to any extra entries, but nothing is deleted — upgrade later and everything comes back."}}
   ]
 }
 </script>
@@ -118,6 +124,7 @@
   .nav-links a{color:var(--black);font-weight:500}
   .nav-links a:hover{color:var(--blue);text-decoration:none}
   .nav-cta{display:flex;gap:12px;align-items:center}
+  .nav-cta .btn{padding:9px 16px;font-size:.9rem}
   .menu-toggle{display:none;background:none;border:0;font-size:1.6rem;color:var(--blue);cursor:pointer}
 
   /* ---------- Hero ---------- */
@@ -160,6 +167,16 @@
   .live-preview:hover .visit span{opacity:1;transform:none}
   .live-note{margin-top:10px;font-size:.82rem;color:var(--grey);text-align:center}
 
+  /* ---------- Who it's for ---------- */
+  .audience{padding:36px 0;border-bottom:1px solid var(--blue-mid)}
+  .audience .label{text-align:center;color:var(--grey);font-size:.98rem;margin-bottom:16px}
+  .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;list-style:none}
+  .chips li{
+    border:1px solid var(--blue-mid);background:var(--blue-light);color:var(--blue-dark);
+    border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:600;
+  }
+  .chips li.more{background:transparent;border-style:dashed;color:var(--grey)}
+
   /* ---------- Sections ---------- */
   section{padding:74px 0}
   .section-head{text-align:center;max-width:680px;margin:0 auto 48px}
@@ -170,6 +187,13 @@
   .section-head p+p{margin-top:10px}
   .alt{background:var(--blue-light)}
 
+  /* Video */
+  .video-frame{max-width:860px;margin:0 auto}
+  .video-frame video{
+    display:block;width:100%;height:auto;border-radius:var(--radius);
+    border:1px solid var(--blue-mid);box-shadow:0 18px 50px rgba(30,111,217,.14);background:#000;
+  }
+
   /* What it is */
   .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
   .pillar{background:var(--white);border:1px solid var(--blue-mid);border-radius:var(--radius);
@@ -179,6 +203,28 @@
     display:flex;align-items:center;justify-content:center;margin-bottom:16px}
   .pillar h3{font-size:1.2rem;margin-bottom:8px}
   .pillar p{color:var(--grey);font-size:.97rem}
+
+  /* Bookings and diary */
+  .booking-showcase{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+  .booking-copy p{color:var(--grey);font-size:1.08rem;max-width:38em}
+  .booking-points{list-style:none;margin-top:24px;display:grid;gap:12px}
+  .booking-points li{position:relative;padding-left:30px;font-weight:600}
+  .booking-points li:before{content:"✓";position:absolute;left:0;top:0;width:21px;height:21px;border-radius:50%;
+    background:var(--white);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:.8rem}
+  .booking-optional{margin-top:22px;font-size:.92rem;color:var(--grey);font-style:italic}
+  .booking-ui{background:var(--white);border:1px solid var(--blue-mid);border-radius:18px;padding:22px;
+    box-shadow:0 18px 50px rgba(30,111,217,.14)}
+  .booking-ui-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+  .booking-ui-head strong{font-size:1.05rem}.booking-ui-head span{font-size:.82rem;color:var(--blue);font-weight:700}
+  .booking-ui-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:16px}
+  .booking-panel{border:1px solid var(--blue-mid);border-radius:12px;padding:15px}
+  .booking-panel h3{font-size:.92rem;margin-bottom:12px}.booking-panel p{font-size:.8rem;color:var(--grey);margin-bottom:12px}
+  .slot{display:block;border:1px solid var(--blue-mid);border-radius:8px;padding:8px 10px;margin-top:8px;font-size:.82rem;font-weight:600}
+  .slot.selected{background:var(--blue);border-color:var(--blue);color:#fff}
+  .calendar-label{display:flex;justify-content:space-between;align-items:center;font-size:.84rem;font-weight:700;margin-bottom:12px}
+  .diary-day{display:grid;grid-template-columns:38px 1fr;gap:8px;align-items:start;font-size:.76rem;margin-bottom:10px;color:var(--grey)}
+  .appointment{background:var(--blue-light);border-left:3px solid var(--blue);border-radius:5px;padding:7px 8px;color:var(--black);font-weight:600}
+  .appointment strong{display:block;font-size:.78rem}.appointment span{font-weight:400;color:var(--grey)}
 
   /* How it works */
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
@@ -200,9 +246,12 @@
   .feature-group{grid-column:1/-1;text-transform:uppercase;letter-spacing:1.2px;font-size:.82rem;
     font-weight:700;color:var(--blue);margin-top:14px}
   .feature-group:first-child{margin-top:0}
+  .pill{display:inline-block;margin-left:7px;vertical-align:2px;background:var(--blue);color:#fff;
+    font-size:.62rem;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:2px 8px;border-radius:999px}
+  .features-note{margin-top:26px;text-align:center;color:var(--grey);font-size:.93rem}
 
   /* Tiers */
-  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+  .tiers{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:stretch;max-width:820px;margin:0 auto}
   .tier{border:1px solid var(--blue-mid);border-radius:var(--radius);padding:30px 26px;background:var(--white);
     display:flex;flex-direction:column}
   .tier.featured{border:2px solid var(--blue);box-shadow:0 18px 44px rgba(30,111,217,.16);position:relative}
@@ -235,7 +284,7 @@
 
   /* Footer */
   footer{background:var(--black);color:#c7cfda;padding:50px 0 28px}
-  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:34px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px}
   footer .brand{color:#fff}
   footer .brand img{height:38px}
   footer p{font-size:.92rem;color:#9aa6b4;margin-top:14px;max-width:30em}
@@ -251,7 +300,8 @@
   @media(max-width:900px){
     .hero-grid{grid-template-columns:1fr;gap:36px}
     .hero h1{font-size:2.4rem}
-    .pillars,.steps,.features,.tiers{grid-template-columns:1fr 1fr}
+    .pillars,.steps,.features{grid-template-columns:1fr 1fr}
+    .booking-showcase{grid-template-columns:1fr;gap:32px}
     .foot-grid{grid-template-columns:1fr 1fr}
   }
   @media(max-width:640px){
@@ -263,7 +313,7 @@
     .nav-links a{padding:10px 0;width:100%}
     .menu-toggle{display:block}
     .nav-cta .btn.ghost{display:none}
-    .pillars,.steps,.features,.tiers,.foot-grid{grid-template-columns:1fr}
+    .pillars,.steps,.features,.tiers,.foot-grid,.booking-ui-grid{grid-template-columns:1fr}
     .hero h1{font-size:2.05rem}
     section{padding:54px 0}
   }
@@ -279,15 +329,15 @@
       <span>My Local Small Business</span>
     </a>
     <nav class="nav-links" id="navLinks">
-      <a href="#what">What it is</a>
+      <a href="#what">What you get</a>
       <a href="#how">How it works</a>
       <a href="#features">Features</a>
       <a href="#tiers">Plans</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn ghost" href="https://mlsb.uk">Search directory</a>
-      <a class="btn" href="https://mlsb.uk/register">List your business</a>
+      <a class="btn ghost" href="https://mlsb.uk/login">Owner login</a>
+      <a class="btn" href="https://mlsb.uk/register">Create free account</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">☰</button>
     </div>
   </div>
@@ -299,13 +349,13 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <h1>Your small business, <span>simply put online.</span></h1>
-      <p class="lead">My Local Small Business gives UK businesses a clean, self-managed mini-site at <strong>mlsb.uk/yourname</strong> — and lists you in a directory local customers can search. No web designer, no hosting headaches.</p>
+      <h1>Your business online — <span>in minutes, not weeks.</span></h1>
+      <p class="lead">A professional mini-site you manage yourself: your photos, prices, opening hours and contact form, at your own web address. No web designer, no hosting, no domain to buy.</p>
       <div class="hero-actions">
-        <a class="btn" href="https://mlsb.uk/register">Create your mini-site — free</a>
-        <a class="btn ghost" href="https://mlsb.uk">Find a business</a>
+        <a class="btn" href="https://mlsb.uk/register">Create your free account</a>
+        <a class="btn ghost" href="#what">See what you get</a>
       </div>
-      <p class="hero-note">Free tier for every business · Live the moment you register · UK-wide</p>
+      <p class="hero-note">Free forever · Live as soon as you're verified · UK-wide</p>
     </div>
 
     <div class="hero-card">
@@ -321,33 +371,33 @@
   </div>
 </section>
 
-<!-- WHAT IT IS -->
-<section id="video">
+<!-- WHO IT'S FOR -->
+<div class="audience">
   <div class="wrap">
-    <div class="section-head">
-    <video
-      class="hero-video"
-      src="https://mlsb.uk/assets/video/mlsb-feature-ad.mp4"
-      poster="https://mlsb.uk/assets/video/mlsb-hero-poster.jpg"
-      controls
-      playsinline
-      preload="none"
-      width="100%" height="100%">
-      Your browser doesn't support video.
-      <a href="https://mlsb.uk/assets/video/mlsb-hero.mp4">Download the video</a>.
-    </video>
-    </div>
+    <p class="label">Built for the businesses that never got round to a website</p>
+    <ul class="chips">
+      <li>Tradespeople</li>
+      <li>Salons &amp; barbers</li>
+      <li>Cafés &amp; takeaways</li>
+      <li>Shops</li>
+      <li>Cleaners</li>
+      <li>Tutors</li>
+      <li>Therapists</li>
+      <li>Photographers</li>
+      <li>Clubs &amp; societies</li>
+      <li>Venue hire</li>
+      <li class="more">…and anyone else</li>
+    </ul>
   </div>
-</section>
+</div>
 
-<!-- WHAT IT IS -->
+<!-- YOUR ACCOUNT -->
 <section id="what">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">What is MLSB?</span>
-      <h2>A whole web presence, without building a website</h2>
-      <p>MLSB is a hosted platform with three simple parts working together — so customers can find you and you stay in control.</p>
-      <p>A mini-site is your whole online presence on one tidy, mobile-friendly page, built on the spot from the content blocks you choose — description, gallery, price list or menu, contact form and more. It goes live the moment you register, and you never have to build, host or maintain a thing.</p>
+      <span class="eyebrow">What you get</span>
+      <h2>Everything you need to look professional online</h2>
+      <p>One account gives you a page customers can trust, a dashboard to keep it current, and optional extras you can switch on only if they suit how you work.</p>
     </div>
     <div class="pillars">
       <div class="pillar">
@@ -356,47 +406,104 @@
         <p>A single, mobile-friendly page at your own short URL — description, contact details, gallery, price list or menu, and a contact form. Pick a template and colour scheme that fits.</p>
       </div>
       <div class="pillar">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1e6fd9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
-        <h3>The public directory</h3>
-        <p>A searchable homepage where customers look by keyword, category and area. Your business shows up wherever you operate — a single town, a county, a region, or UK-wide.</p>
-      </div>
-      <div class="pillar">
         <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1e6fd9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 4-5"/></svg></div>
         <h3>Your dashboard</h3>
-        <p>An owner control centre to edit content, reorder sections, switch templates and watch weekly and monthly visitor counts — all without touching code.</p>
+        <p>Your control centre to edit content, reply to enquiries and watch visitor counts — all without touching code or waiting on anyone else.</p>
+      </div>
+      <div class="pillar">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1e6fd9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
+        <h3>Optional extras</h3>
+        <p>Turn on online bookings and a diary, publish events, or send invoices and newsletters. Use what helps and leave the rest switched off.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- VIDEO -->
+<section id="video" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Take a look</span>
+      <h2>MLSB in ninety seconds</h2>
+      <p>See how a mini-site comes together and what your dashboard looks like.</p>
+    </div>
+    <div class="video-frame">
+      <video
+        src="https://mlsb.uk/assets/video/mlsb-feature-ad.mp4"
+        poster="https://mlsb.uk/assets/video/mlsb-hero-poster.jpg"
+        controls
+        playsinline
+        preload="none">
+        Your browser doesn't support video.
+        <a href="https://mlsb.uk/assets/video/mlsb-hero.mp4">Download the video</a>.
+      </video>
+    </div>
+  </div>
+</section>
+
 <!-- HOW IT WORKS -->
-<section id="how" class="alt">
+<section id="how">
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">How it works</span>
-      <h2>Live in four steps</h2>
-      <p>From sign-up to a working page takes minutes. Everything else you can refine whenever you like.</p>
+      <h2>Get set up in four steps</h2>
+      <p>Creating your account takes minutes. Once you're verified your page is live, and you can refine it whenever you like.</p>
     </div>
     <div class="steps">
       <div class="step">
         <div class="num">1</div>
-        <h3>Register</h3>
-        <p>Enter your business name and a few basics. We suggest a tidy web address (slug) you can tweak.</p>
+        <h3>Create your account</h3>
+        <p>Enter your business name and a few basics. We suggest a tidy web address you can tweak.</p>
       </div>
       <div class="step">
         <div class="num">2</div>
-        <h3>Go live instantly</h3>
-        <p>Your mini-site is published the moment you register at mlsb.uk/yourname — nothing to deploy.</p>
+        <h3>Confirm and go live</h3>
+        <p>Click the link in our email and confirm you're the business owner. Your mini-site then goes live at mlsb.uk/yourname — nothing to deploy.</p>
       </div>
       <div class="step">
         <div class="num">3</div>
-        <h3>Add your content</h3>
+        <h3>Make it yours</h3>
         <p>In the dashboard, add your description, photos, prices, opening hours and contact form.</p>
       </div>
       <div class="step">
         <div class="num">4</div>
-        <h3>Get found</h3>
-        <p>You appear in directory searches by category and area, so nearby customers can reach you.</p>
+        <h3>Share your link</h3>
+        <p>Put your address on your van, cards and socials. Switch on bookings or events if you want them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKINGS -->
+<section id="bookings" class="alt">
+  <div class="wrap booking-showcase">
+    <div class="booking-copy">
+      <span class="eyebrow">Optional</span>
+      <h2>Take appointments? Let customers book you online</h2>
+      <p>If your work runs on a diary, switch bookings on. Add bookable appointments, rooms or venues to your mini-site, and every booking lands in one place for you to manage.</p>
+      <ul class="booking-points">
+        <li>Take bookings directly from your mini-site — free</li>
+        <li>Keep appointments and availability in one place</li>
+        <li>Send confirmations and cancellations automatically</li>
+      </ul>
+      <p class="booking-optional">Not a booking business? Leave it switched off — your mini-site works perfectly well without it.</p>
+    </div>
+    <div class="booking-ui" aria-label="Illustration of a booking and diary view">
+      <div class="booking-ui-head"><strong>Your booking diary</strong><span id="diaryToday">Today</span></div>
+      <div class="booking-ui-grid">
+        <div class="booking-panel">
+          <h3>Book an appointment</h3>
+          <p>Choose a time that works for you.</p>
+          <span class="slot">09:30</span>
+          <span class="slot selected">11:00</span>
+          <span class="slot">14:30</span>
+        </div>
+        <div class="booking-panel">
+          <div class="calendar-label"><span id="diaryWeekday">Today</span><span id="diaryShort"></span></div>
+          <div class="diary-day"><span>09:30</span><div class="appointment"><strong>Initial consultation</strong><span>45 minutes</span></div></div>
+          <div class="diary-day"><span>11:00</span><div class="appointment"><strong>New booking</strong><span>Customer confirmation sent</span></div></div>
+          <div class="diary-day"><span>14:30</span><div class="appointment"><strong>Follow-up appointment</strong><span>30 minutes</span></div></div>
+        </div>
       </div>
     </div>
   </div>
@@ -406,12 +513,19 @@
 <section id="features">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">What you get</span>
-      <h2>Everything a small business needs to be online</h2>
-      <p>Designed to be simple to run and easy for customers to use. Every section below can be switched on or off and reordered from your dashboard.</p>
+      <span class="eyebrow">Features</span>
+      <h2>More ways to make your account work for you</h2>
+      <p>Every section can be switched on or off and reordered from your dashboard, so your page shows only what matters to your business.</p>
     </div>
     <div class="features">
-      <div class="feature-group">Your content</div>
+      <div class="feature-group">Your mini-site</div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>18 design templates</h3>
+          <p>From artisan and professional to coastal and noir — each with named colour schemes, header backgrounds featuring your logo, and optional top navigation.</p>
+        </div>
+      </div>
       <div class="feature">
         <div class="tick">✓</div>
         <div>
@@ -423,91 +537,39 @@
         <div class="tick">✓</div>
         <div>
           <h3>Price lists &amp; menus</h3>
-          <p>Publish clear price lists or menus, organised into sections, so customers know what you offer before they get in touch.</p>
+          <p>Publish clear prices or menus, organised into sections, so customers know what you offer before they get in touch.</p>
         </div>
       </div>
-      <div class="feature">
-        <div class="tick">✓</div>
-        <div>
-          <h3>Articles</h3>
-          <p>Share news, offers and updates as articles on your mini-site — an easy way to keep customers coming back.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="tick">✓</div>
-        <div>
-          <h3>Callouts</h3>
-          <p>Highlight a special offer, announcement or key message in an eye-catching callout box on your page.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="tick">✓</div>
-        <div>
-          <h3>18 design templates</h3>
-          <p>From artisan and professional to coastal and noir — each with named colour schemes, header backgrounds
-            featuring your logo, and optional top navigation.</p>
-        </div>
-      </div>
-      <div class="feature-group">Get found</div>
-      <div class="feature">
-        <div class="tick">✓</div>
-        <div>
-          <h3>Search by category or area</h3>
-          <p>Pick the type of business, towns, counties or regions you serve — or UK-wide — and match every relevant search.
-          </p>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="tick">✓</div>
-        <div>
-          <h3>Featured adverts</h3>
-          <p>Promote your business with a featured advert shown at the top of search results and area or category listings.
-          </p>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="tick">✓</div>
-        <div>
-          <h3>Events</h3>
-          <p>List your upcoming events on your mini-site and have them appear in directory search results too.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="tick">✓</div>
-        <div>
-          <h3>Google map</h3>
-          <p>Optionally show a map of your primary address so customers can find you easily.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="tick">✓</div>
-        <div>
-          <h3>AI-improved descriptions</h3>
-          <p>One click asks AI to sharpen your business description — keeping your facts, improving the wording.</p>
-        </div>
-      </div>
+
       <div class="feature-group">Run your business</div>
       <div class="feature">
         <div class="tick">✓</div>
         <div>
-          <h3>Contact form</h3>
-          <p>A built-in form so customers can reach you directly from your mini-site, without your email address being exposed.</p>
+          <h3>Contact form &amp; enquiry routing</h3>
+          <p>Customers reach you from your page without your email address being exposed — and each enquiry goes to the right inbox or team member.</p>
         </div>
       </div>
       <div class="feature">
         <div class="tick">✓</div>
         <div>
-          <h3>Team &amp; enquiry routing</h3>
-          <p>Add team members and send each contact-form enquiry to the right inbox — your account, a named team member, or
-            any address.</p>
+          <h3>Online bookings &amp; diary</h3>
+          <p>Offer appointments, rooms or venues online and see every booking in one clear diary, with confirmations handled for you. Entirely optional.</p>
         </div>
       </div>
       <div class="feature">
         <div class="tick">✓</div>
         <div>
-          <h3>Bookings</h3>
-          <p>Take bookings for rooms, venues and appointments, linked to your diary — with email confirmations and
-            cancellation for you and your customer.</p>
+          <h3>Invoices <span class="pill">Premium</span></h3>
+          <p>Create and send invoices from your account, optionally linked to a booking, and track what's been paid.</p>
+        </div>
+      </div>
+
+      <div class="feature-group">Keep customers coming back</div>
+      <div class="feature">
+        <div class="tick">✓</div>
+        <div>
+          <h3>News, offers &amp; events</h3>
+          <p>Post updates and highlight a special offer, or list upcoming events with dates — an easy way to give people a reason to look again.</p>
         </div>
       </div>
       <div class="feature">
@@ -520,11 +582,12 @@
       <div class="feature">
         <div class="tick">✓</div>
         <div>
-          <h3>Privacy &amp; terms built in</h3>
-          <p>Standard policy pages are included on every plan, with optional customisation.</p>
+          <h3>Newsletters <span class="pill">Premium</span></h3>
+          <p>Email your customers from your account, with consent and unsubscribes handled properly.</p>
         </div>
       </div>
     </div>
+    <p class="features-note">Also included: a local directory listing, AI-assisted description writing, an optional Google map, opening hours, social links and standard privacy and terms pages.</p>
   </div>
 </section>
 
@@ -534,48 +597,40 @@
     <div class="section-head">
       <span class="eyebrow">Plans</span>
       <h2>Start free, upgrade if you need more</h2>
-      <p>A freemium model: every registered business gets a free mini-site, with premium features you can trial and unlock.</p>
+      <p>Your mini-site and its everyday tools are free, forever. Premium adds the extras for businesses that want to do more.</p>
     </div>
     <div class="tiers">
       <div class="tier">
         <h3>Free</h3>
         <div class="price">£0 — always</div>
         <ul>
-          <li>Live mini-site at your own slug</li>
-          <li>Core content blocks</li>
-          <li>Directory listing &amp; search</li>
-          <li>Articles, image gallery, contact form</li>
+          <li>Your own web address — mlsb.uk/yourname</li>
+          <li>Photos, price lists, articles and offers</li>
+          <li>Contact form and enquiry routing</li>
+          <li>Online bookings &amp; diary</li>
+          <li>Events on your mini-site</li>
           <li>Template &amp; colour scheme choice</li>
           <li>Visitor counts</li>
+          <li>Local directory listing</li>
         </ul>
-        <a class="btn ghost" href="https://mlsb.uk/register">Get started</a>
+        <a class="btn ghost" href="https://mlsb.uk/register">Create free account</a>
+        <p class="tier-note">No card details needed.</p>
       </div>
       <div class="tier featured">
-        <span class="tag">Popular</span>
-        <h3>Trial</h3>
-        <div class="price">Premium, free for 30 days</div>
-        <ul>
-          <li>Everything in Free</li>
-          <li>Events &amp; bookings</li>
-          <li>Full premium feature access</li>
-          <li>Premium templates &amp; gallery styles</li>
-          <li>Featured adverts in search results</li>
-          <li>Extra pages &amp; customisation</li>
-        </ul>
-        <a class="btn" href="https://mlsb.uk/register">Start free trial</a>
-        <p class="tier-note">Reverts to Free automatically when the trial ends — nothing to cancel.</p>
-      </div>
-      <div class="tier">
+        <span class="tag">First 30 days free</span>
         <h3>Premium</h3>
         <div class="price">£5/month · £50/year (2 months free)</div>
         <ul>
-          <li>Everything in the trial, kept on</li>
-          <li>Extended capabilities</li>
-          <li>Premium templates &amp; pages</li>
+          <li>Everything in Free</li>
+          <li>Send invoices</li>
+          <li>Send newsletters</li>
+          <li>Premium templates &amp; gallery styles</li>
           <li>Featured adverts in search results</li>
-          <li>Paid policy-page customisation</li>
+          <li>Higher content limits</li>
+          <li>Policy page customisation</li>
         </ul>
-        <a class="btn ghost" href="https://mlsb.uk/register">Upgrade</a>
+        <a class="btn" href="https://mlsb.uk/register">Try Premium free</a>
+        <p class="tier-note">Reverts to Free automatically when the trial ends — nothing to cancel.</p>
       </div>
     </div>
   </div>
@@ -590,8 +645,12 @@
     </div>
     <div class="faq">
       <details>
+        <summary>What exactly do I get?</summary>
+        <p>A single-page mini-site at mlsb.uk/yourname with your description, contact details, opening hours, photos, prices and a contact form — plus a dashboard to manage it all. Extras such as events, online bookings and newsletters can be switched on if you want them.</p>
+      </details>
+      <details>
         <summary>Is the free plan really free?</summary>
-        <p>Yes — £0, forever. Every registered business gets a live mini-site and a directory listing, and no card details are needed unless you choose the paid tier.</p>
+        <p>Yes — £0, forever. Every verified business gets a live mini-site, and no card details are needed unless you choose to upgrade.</p>
       </details>
       <details>
         <summary>Do I need my own domain name?</summary>
@@ -602,16 +661,24 @@
         <p>None. Everything is managed from a simple dashboard — nothing to install, host or update.</p>
       </details>
       <details>
-        <summary>What happens when my free trial ends?</summary>
-        <p>Your account reverts to Free automatically and nothing is charged. Free-tier limits then apply to any extra entries, but nothing is deleted — upgrade later and everything comes back.</p>
+        <summary>How quickly will my mini-site be live?</summary>
+        <p>As soon as your account is verified. When you register we email you a confirmation link, and we ask you to confirm that you are the owner of the business. Once that's done your mini-site goes live at mlsb.uk/yourname, and you can add and refine your content whenever suits you.</p>
+      </details>
+      <details>
+        <summary>Do I have to use the bookings system?</summary>
+        <p>Not at all. Bookings are entirely optional and switched off by default. Plenty of businesses just want a smart page with their prices, photos and a contact form — that works perfectly well on its own.</p>
+      </details>
+      <details>
+        <summary>How do bookings and the diary work?</summary>
+        <p>If you turn them on, you add bookable appointments, rooms or venues and set your availability. Customers choose a time online, then you both receive confirmation and cancellation emails.</p>
       </details>
       <details>
         <summary>How much does Premium cost, and can I cancel?</summary>
         <p>£5 a month or £50 a year (two months free). You can cancel at any time and drop back to the free plan; after the initial grace period, payments aren't refunded.</p>
       </details>
       <details>
-        <summary>How quickly will my mini-site be live?</summary>
-        <p>The moment you register. You can add and refine your content whenever suits you.</p>
+        <summary>What happens when my free trial ends?</summary>
+        <p>Your account reverts to Free automatically and nothing is charged. Free-tier limits then apply to any extra entries, but nothing is deleted — upgrade later and everything comes back.</p>
       </details>
     </div>
   </div>
@@ -620,9 +687,9 @@
 <!-- CTA BAND -->
 <section class="cta-band">
   <div class="wrap">
-    <h2>Ready to put your business online?</h2>
-    <p>Register in minutes and your mini-site goes live straight away. Free to start, with no website to build.</p>
-    <a class="btn" href="https://mlsb.uk/register">Create your free mini-site</a>
+    <h2>Ready to get your business online?</h2>
+    <p>Create your account in minutes, confirm your email to go live, and try the Premium extras, including invoicing, free for 30 days.</p>
+    <a class="btn" href="https://mlsb.uk/register">Create your free account</a>
   </div>
 </section>
 
@@ -635,14 +702,15 @@
           <img src="assets/brand/MLSB_SimpleM.png" alt="MLSB logo">
           <span>My Local Small Business</span>
         </a>
-        <p>Simply putting UK small businesses online — a hosted mini-site and searchable directory, self-managed and free to start.</p>
+        <p>Simple, self-managed mini-sites for UK small businesses. Free to start and live as soon as your account is verified.</p>
       </div>
       <div>
         <h4>Platform</h4>
         <ul>
-          <li><a href="#what">What it is</a></li>
+          <li><a href="#what">What you get</a></li>
           <li><a href="#how">How it works</a></li>
           <li><a href="#features">Features</a></li>
+          <li><a href="#bookings">Bookings &amp; diary</a></li>
           <li><a href="#tiers">Plans</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
@@ -650,10 +718,16 @@
       <div>
         <h4>Get started</h4>
         <ul>
-          <li><a href="https://mlsb.uk">Search the directory</a></li>
-          <li><a href="https://mlsb.uk/register">List your business</a></li>
+          <li><a href="https://mlsb.uk/register">Create free account</a></li>
           <li><a href="https://mlsb.uk/login">Owner login</a></li>
-          <li><a href="https://mlsb.uk">Visit mlsb.uk</a></li>
+          <li><a href="https://mlsb.uk">Find a local business</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="https://mlsb.uk/privacy">Privacy policy</a></li>
+          <li><a href="https://mlsb.uk/terms">Terms of use</a></li>
         </ul>
       </div>
     </div>
@@ -671,6 +745,17 @@
   n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');t.setAttribute('aria-expanded','false')}});
   // Year
   document.getElementById('year').textContent=new Date().getFullYear();
+
+  // Keep the diary illustration showing today's date rather than a fixed one.
+  (function(){
+    var d=new Date();
+    document.getElementById('diaryToday').textContent=
+      'Today, '+d.toLocaleDateString('en-GB',{day:'numeric',month:'long'});
+    document.getElementById('diaryWeekday').textContent=
+      d.toLocaleDateString('en-GB',{weekday:'long'});
+    document.getElementById('diaryShort').textContent=
+      d.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+  })();
 
   // Hero: live preview of a real mini-site. Asks mlsb.uk for a random
   // presentable business (/api/showcase); falls back to the directory
