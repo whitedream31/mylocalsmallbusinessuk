@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ClaudeCodeEditorTabs">
-    <option name="activeSessionId" value="f02275e4-5db9-4d60-a94f-46ad0d36ba56" />
+    <option name="activeSessionId" value="833fbb4d-646c-4576-b636-fb8dab254e30" />
     <option name="openSessionIds">
       <list>
         <option value="f02275e4-5db9-4d60-a94f-46ad0d36ba56" />
+        <option value="833fbb4d-646c-4576-b636-fb8dab254e30" />
       </list>
     </option>
     <option name="sessionPaths">
       <map>
+        <entry key="833fbb4d-646c-4576-b636-fb8dab254e30" value="/sessions/97f8bd3a-8efe-4968-be71-2f3e1726e2e6" />
         <entry key="f02275e4-5db9-4d60-a94f-46ad0d36ba56" value="/sessions/b0aa2e1c-e6dd-4c51-9ef6-79f513055747" />
       </map>
     </option>
     <option name="sessionTitles">
       <map>
+        <entry key="833fbb4d-646c-4576-b636-fb8dab254e30" value="Since I now have a membership mananagement system" />
         <entry key="f02275e4-5db9-4d60-a94f-46ad0d36ba56" value="Please have a look at the main website. It should" />
       </map>
     </option>
